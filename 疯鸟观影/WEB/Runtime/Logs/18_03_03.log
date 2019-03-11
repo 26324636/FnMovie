@@ -1,0 +1,440 @@
+[ 2018-03-03T00:02:18+08:00 ] 112.11.51.108 /video/index.php/User/register?user_data=26324636&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000406s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000410s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES ('26324636','26324636','','','','尚未开通VIP','2018-03-03') [ RunTime:0.056853s ]
+
+[ 2018-03-03T00:02:21+08:00 ] 112.11.51.108 /video/index.php/User/login?user_data=26324636&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000444s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000460s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000173s ]
+
+[ 2018-03-03T00:03:03+08:00 ] 112.11.51.108 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000415s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000396s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000058s ]
+
+[ 2018-03-03T00:03:10+08:00 ] 112.11.51.108 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000402s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000437s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000056s ]
+
+[ 2018-03-03T00:03:34+08:00 ] 112.11.51.108 /video/index.php/User/update_mes?user_data=26324636&qq_data=26324636&phone_data=17857058385&qianming_data=%E6%AF%8F%E6%9D%A1%E8%B7%AF%E9%83%BD%E6%9C%89%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%BF%99%E6%A0%B7%E8%B5%B0%E7%9A%84%E7%90%86%E7%94%B1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Use of undefined constant qianming_data - assumed 'qianming_data' /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000415s ]
+SQL: UPDATE `user` SET `qq`='26324636',`phone`='17857058385',`qianming`='每条路都有不得不这样走的理由' WHERE ( `username` = 26324636 ) [ RunTime:0.016443s ]
+
+[ 2018-03-03T00:03:39+08:00 ] 112.11.51.108 /video/index.php/User/vip_jihuo?user_data=26324636&jihuoma_data=aa
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000549s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.000717s ]
+SQL: SELECT * FROM `vip` WHERE ( `jihuoma` = 'aa' ) LIMIT 1   [ RunTime:0.000166s ]
+
+[ 2018-03-03T00:03:54+08:00 ] 112.11.51.108 /video/index.php/User/vip_jihuo?user_data=26324636&jihuoma_data=aa
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000462s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.000381s ]
+SQL: SELECT * FROM `vip` WHERE ( `jihuoma` = 'aa' ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000329s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: UPDATE `user` SET `id`=16,`username`='26324636',`password`='26324636',`qq`='26324636',`phone`='17857058385',`qianming`='每条路都有不得不这样走的理由',`zhuce_data`='2018-03-03',`vip_data`='2018-04-02' WHERE ( `username` = 26324636 ) [ RunTime:0.019363s ]
+SQL: UPDATE `vip` SET `id`=1,`jihuoma`='aa',`is_use`=1,`day`=30 WHERE ( `jihuoma` = 'aa' ) [ RunTime:0.019805s ]
+
+[ 2018-03-03T00:03:56+08:00 ] 112.11.51.108 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000811s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000679s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000214s ]
+
+[ 2018-03-03T00:04:01+08:00 ] 112.11.51.108 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000700s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000394s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000057s ]
+
+[ 2018-03-03T00:04:05+08:00 ] 112.11.51.108 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000431s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000056s ]
+
+[ 2018-03-03T00:04:22+08:00 ] 112.11.51.108 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000412s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000390s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000087s ]
+
+[ 2018-03-03T00:05:14+08:00 ] 112.11.51.108 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000436s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000420s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000059s ]
+
+[ 2018-03-03T00:05:26+08:00 ] 112.11.51.108 /video/index.php/User/queren_pass?user_data=26324636&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000430s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000407s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000075s ]
+
+[ 2018-03-03T00:05:32+08:00 ] 112.11.51.108 /video/index.php/User/queren_pass?user_data=26324636&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000442s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000056s ]
+
+[ 2018-03-03T00:05:32+08:00 ] 112.11.51.108 /video/index.php/User/change_pass?user_data=26324636&new_pass=12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000440s ]
+SQL: UPDATE `user` SET `password`='12345678' WHERE ( `username` = 26324636 ) [ RunTime:0.021556s ]
+
+[ 2018-03-03T00:05:33+08:00 ] 112.11.51.108 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000535s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000255s ]
+
+[ 2018-03-03T00:05:45+08:00 ] 112.11.51.108 /video/index.php/User/login?user_data=26324636&password_data=12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000409s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000427s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000058s ]
+
+[ 2018-03-03T00:31:38+08:00 ] 101.226.64.174 /video/index.php/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000427s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000079s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T01:53:09+08:00 ] 14.17.3.64 /video/index.php/User/get_user_info?user_data%3D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000552s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000703s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000062s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T01:53:09+08:00 ] 183.57.53.222 /video/index.php/User/update_mes?user_data%3D26324636%26qq_data%3D26324636%26phone_data%3D17857058385%26qianming_data%3D%25E6%25AF%258F%25E6%259D%25A1%25E8%25B7%25AF%25E9%2583%25BD%25E6%259C%2589%25E4%25B8%258D%25E5%25BE%2597%25E4%25B8%258D%25E8%25BF%2599%25E6%25A0%25B7%25E8%25B5%25B0%25E7%259A%2584%25E7%2590%2586%25E7%2594%25B1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000544s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: qq_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: phone_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant qianming_data - assumed 'qianming_data' /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 104 行.
+NOTIC: [8] Undefined index: qianming_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000841s ]
+SQL: UPDATE `user` SET `qq`=null,`phone`=null,`qianming`=null WHERE ( `username` =  ) [ RunTime:0.001367s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user` SET `qq`=null,`phone`=null,`qianming`=null WHERE ( `username` =  )
+
+[ 2018-03-03T01:53:09+08:00 ] 119.147.207.152 /video/index.php/User/login?user_data%3D26324636%26password_data%3D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000521s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000784s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000070s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T02:13:03+08:00 ] 101.226.64.174 /video/index.php/User/change_pass?user_data%3D26324636%26new_pass%3D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 87 行.
+NOTIC: [8] Undefined index: new_pass /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000433s ]
+SQL: UPDATE `user` SET `password`=null WHERE ( `username` =  ) [ RunTime:0.000057s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user` SET `password`=null WHERE ( `username` =  )
+
+[ 2018-03-03T02:45:30+08:00 ] 112.90.82.196 /video/index.php/User/register?user_data%3D26324636%26password_data%3D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000482s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000446s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000065s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+SQL: INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-03') [ RunTime:0.000111s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-03')
+
+[ 2018-03-03T02:45:45+08:00 ] 101.226.68.215 /video/index.php/User/login?user_data%3D26324636%26password_data%3D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000589s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000561s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000078s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T03:50:50+08:00 ] 183.57.53.197 /video/index.php/User/login?user_data%253D26324636%2526password_data%253D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000406s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000410s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000062s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T03:50:50+08:00 ] 119.147.207.152 /video/index.php/User/update_mes?user_data%253D26324636%2526qq_data%253D26324636%2526phone_data%253D17857058385%2526qianming_data%253D%2525E6%2525AF%25258F%2525E6%25259D%2525A1%2525E8%2525B7%2525AF%2525E9%252583%2525BD%2525E6%25259C%252589%2525E4%2525B8%25258D%2525E5%2525BE%252597%2525E4%2525B8%25258D%2525E8%2525BF%252599%2525E6%2525A0%2525B7%2525E8%2525B5%2525B0%2525E7%25259A%252584%2525E7%252590%252586%2525E7%252594%2525B1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000423s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 100 行.
+NOTIC: [8] Undefined index: qq_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 102 行.
+NOTIC: [8] Undefined index: phone_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 103 行.
+NOTIC: [8] Use of undefined constant qianming_data - assumed 'qianming_data' /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 104 行.
+NOTIC: [8] Undefined index: qianming_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000454s ]
+SQL: UPDATE `user` SET `qq`=null,`phone`=null,`qianming`=null WHERE ( `username` =  ) [ RunTime:0.000060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user` SET `qq`=null,`phone`=null,`qianming`=null WHERE ( `username` =  )
+
+[ 2018-03-03T03:50:50+08:00 ] 14.17.3.64 /video/index.php/User/get_user_info?user_data%253D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000623s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000392s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000075s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T04:27:49+08:00 ] 14.17.3.64 /video/index.php/User/login?user_data%253D26324636%2526password_data%253D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000450s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000435s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000061s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T04:36:44+08:00 ] 112.90.82.218 /video/index.php/User/change_pass?user_data%253D26324636%2526new_pass%253D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000478s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 87 行.
+NOTIC: [8] Undefined index: new_pass /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000460s ]
+SQL: UPDATE `user` SET `password`=null WHERE ( `username` =  ) [ RunTime:0.000061s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user` SET `password`=null WHERE ( `username` =  )
+
+[ 2018-03-03T04:47:11+08:00 ] 119.147.207.152 /video/index.php/User/register?user_data%253D26324636%2526password_data%253D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000376s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000057s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+SQL: INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-03') [ RunTime:0.000112s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-03')
+
+[ 2018-03-03T05:37:02+08:00 ] 14.17.3.64 /video/index.php/User/login?user_data%25253D26324636%252526password_data%25253D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000491s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000066s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T06:03:03+08:00 ] 14.17.3.64 /video/index.php/User/get_user_info?user_data%25253D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000518s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000488s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000070s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-03-03T06:38:31+08:00 ] 183.57.53.177 /video/index.php/User/register?user_data%25253D26324636%252526password_data%25253D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000409s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000443s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000061s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+SQL: INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-03') [ RunTime:0.000088s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-03')
+
+[ 2018-03-03T08:30:05+08:00 ] 112.90.82.236 /video/index.php/User/change_pass?user_data%25253D26324636%252526new_pass%25253D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000432s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 87 行.
+NOTIC: [8] Undefined index: new_pass /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000481s ]
+SQL: UPDATE `user` SET `password`=null WHERE ( `username` =  ) [ RunTime:0.000075s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user` SET `password`=null WHERE ( `username` =  )
+
+[ 2018-03-03T10:40:15+08:00 ] 183.57.53.196 /video/index.php/User/change_pass?user_data%2525253D26324636%25252526new_pass%2525253D12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000490s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 87 行.
+NOTIC: [8] Undefined index: new_pass /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 89 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000420s ]
+SQL: UPDATE `user` SET `password`=null WHERE ( `username` =  ) [ RunTime:0.000071s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `user` SET `password`=null WHERE ( `username` =  )
+

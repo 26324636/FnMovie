@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>栏目管理</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="lanmu">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：设置 > 站点基本设置</span>
+			</div>
+			<div class="container">
+				<div class="option">
+					<strong class="fl">共<b>6</b>个栏目</strong>
+					<div class="fr">
+						<a href="menu-new.php" title="添加新栏目" class="plus fl ml20">添加新栏目</a>
+					</div>
+				</div>
+				<form name="cmsform" id="cmsform" method="post" action="?options=batch">
+					<table width="100%" class="item">
+						<tbody>
+							<tr class="title">
+								<td width="4%" align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll" title="全选"></td>
+								<td width="25%">栏目名称</td>
+								<td width="26%">指向链接</td>
+								<td width="5%" align="center">排序</td>
+								<td width="28%">描述</td>
+								<td width="12%" align="center">操作</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="2"></td>
+								<td>Hbuilder</td>
+								<td>http://www.hcoder.net/hbuilder</td>
+								<td align="center">2</td>
+								<td>hbuilder相关</td>
+								<td align="center">
+									<a href="menu-edt.php?id=2">编辑</a> |
+									<a href="option-menu.php?id=2&amp;options=del">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="4"></td>
+								<td>HTML5+</td>
+								<td>http://www.hcoder.net/html5+</td>
+								<td align="center">3</td>
+								<td>HTML5+相关.</td>
+								<td align="center">
+									<a href="menu-edt.php?id=4">编辑</a> |
+									<a href="option-menu.php?id=4&amp;options=del">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="5"></td>
+								<td>MUI</td>
+								<td>http://www.hcoder.net/mui</td>
+								<td align="center">5</td>
+								<td>MUI相关.</td>
+								<td align="center">
+									<a href="menu-edt.php?id=5">编辑</a> |
+									<a href="option-menu.php?id=5&amp;options=del">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="6"></td>
+								<td>WPA2APP</td>
+								<td>http://www.hcoder.net/wap2app</td>
+								<td align="center">6</td>
+								<td>WPA2APP相关</td>
+								<td align="center">
+									<a href="menu-edt.php?id=6">编辑</a> |
+									<a href="option-menu.php?id=6&amp;options=del">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="11"></td>
+								<td>CSS</td>
+								<td>http://www.hcoder.net/css</td>
+								<td align="center">4</td>
+								<td>Css相关</td>
+								<td align="center">
+									<a href="menu-edt.php?id=11">编辑</a> |
+									<a href="option-menu.php?id=11&amp;options=del">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="13"></td>
+								<td>首页</td>
+								<td>http://www.hcoder.net/</td>
+								<td align="center">1</td>
+								<td></td>
+								<td align="center">
+									<a href="menu-edt.php?id=13">编辑</a> |
+									<a href="option-menu.php?id=13&amp;options=del">删除</a>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

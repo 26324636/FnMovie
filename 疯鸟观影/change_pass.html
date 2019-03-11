@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>更改密码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+
+	</head>
+
+	<body>
+		<div class="wrap flex-c-c">
+				<ul class="select__list">
+					<li id="login" class="select__label select__label--active">更改密码</li>
+				</ul>
+				<span class="pointer" style="right: 0em !important;"></span>
+				<input type="password" placeholder="原密码" class="ui-field" id="yuan_pass" />
+				<input type="password" placeholder="新密码" class="ui-field" id="new_pass" />
+				<input type="password" placeholder="确认新密码" class="ui-field" id="qrnew_pass" />
+				<button id="btn" class="ui-button">确认更改</button>		
+		</div>
+		
+		<script type="text/javascript" src="js/castapp.js"></script>
+		<script type="text/javascript" src="js/mui.js" ></script>
+		<script type="text/javascript">
+			var btn = document.getElementById('btn');		
+			btn.addEventListener('click',function(){
+				
+				var yuan_pass = document.getElementById('yuan_pass').value;
+				
+				var user = localStorage.getItem('user');
+				//alert(user);
+				
+				$.ajax({
+						type: "get",
+						dataType:"text",
+						url: "http://47.74.191.135/fncinema/index.php/User/queren_pass",
+						data: {
+							user_data: user,
+							password_data: yuan_pass
+						},
+						async: true,
+						success: function(data) {
+							if(data == 0){
+								alert("原账号密码不正确");
+							}else{
+								var new_pass = document.getElementById('new_pass').value;
+								var qrnew_pass = document.getElementById('qrnew_pass').value;
+								if(qrnew_pass != new_pass){
+									alert("新账号密码不一致，请重新输入");
+								}else if(qrnew_pass.length < 8 || new_pass.length < 8){
+									alert("密码长度小于8位，请重新输入");
+								}else{
+									$.ajax({
+										type: "get",
+										dataType:"text",
+										url: "http://47.74.191.135/fncinema/index.php/User/change_pass",
+										data: {
+											user_data: user,
+											new_pass:new_pass
+										},
+										async: true,
+										success: function(data) {
+											if(data == 1){
+												alert('更改成功');
+												window.parent.location.reload();
+												parent.$.XYTipsWindow.removeBox(); 
+											}else{
+												alert('更改失败');
+											}
+											
+										}
+									});
+								}
+							}
+							
+						}
+					});
+				
+			});	
+		</script>
+	</body>
+
+</html>

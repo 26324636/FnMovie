@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>文章编辑</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+			
+			.neirong form {
+				margin: 0;
+			}
+			
+			.neirong h3 {
+				text-align: center;
+			}
+			
+			.neirong textarea {
+				display: block;
+			}
+			
+			.neirong form .ke-container {
+				margin: 0 auto;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="edit">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：文章 > 文章编辑</span>
+			</div>
+			<div class="container">
+				<div class="option">
+					<strong class="fl">编辑文章</strong>
+				</div>
+				<form name="postform" id="postform" action="?options=true&amp;id=209" method="post" enctype="multipart/form-data">
+					<table width="100%" class="item">
+						<tbody>
+							<tr class="title">
+								<td colspan="4">编辑文章：激情赛事，燃爆十月|曹娥江国际摩托艇公开赛门票抢票火热进行中</td>
+							</tr>
+							<tr>
+								<td width="1%">标题：</td>
+								<td colspan="3" width="10%">
+									<input id="biaoti" type="text" name="title" id="post-title" required="" placeholder="文章标题..." value="" class="tl">
+								</td>
+							</tr>
+							<tr>
+								<td>语言：</td>
+								<td width="13%">
+									<select name="psort" id="psort" class="select">
+										<option value="1" selected="selected" id="yuyan"></option>
+										<option value="2">Hbuilder</option>
+										<option value="3">HTML5+</option>
+										<option value="4">MUI</option>
+										<option value="5">WAP2APP</option>
+										<option value="6">HTML</option>
+										<option value="7">CSS</option>
+										<option value="8">JS</option>
+										<option value="9">PHP</option>
+										<option value="10">JAVA</option>
+										<option value="11">.NET</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>作者：</td>
+								<td colspan="3"><input id="zuozhe" type="text" name="author" id="post-author" value="" class="tl"></td>
+							</tr>
+							<tr>
+								<td>内容：</td>
+								<td colspan="3"><input id="nr" type="text" name="author" value="" class="tl" height="50%" style="padding-bottom: 70px;text-align: left !important;"></td>
+							</tr>
+
+							<tr>
+								<td>&nbsp;</td>
+								<td colspan="3"><button type="submit" class="submit" id="btn">保存</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+			//			alert(1)
+			//			alert(window.location.href)
+			var index = window.location.search;
+			//			alert(index)
+			var id = index.split('?')[1];
+			//			alert(id);
+			var btn = document.getElementById('btn');
+			var biaoti = document.getElementById('biaoti');
+			var yuyan = document.getElementById('yuyan');
+			var zuozhe = document.getElementById('zuozhe');
+			var neirong = document.getElementById('nr');
+			$.ajax({
+				type: "get",
+				url: "http://101.200.58.92/shiyan/index.php/Web/article_edit1",
+				data: {
+					id_data: id
+				},
+				async: true,
+				success: function(data) {
+					//														alert(data);
+					json = JSON.parse(data);
+					//									
+
+					biaoti.value = json[0].biaoti;
+					yuyan.innerHTML = json[0].yuyan;
+					zuozhe.value = json[0].name;
+					neirong.value = json[0].neirong;
+					//									nr.value="xxxx";
+					//									alert(json[0].neirong);
+
+				}
+			});
+			//			var id = window.location.href.split(“=”)[1];
+			//			alert(id);
+
+			btn.addEventListener('click', function() {
+				var bt = biaoti.value;
+
+				var op = $("#psort option:selected");
+				yy = op.html();
+
+				var zz = zuozhe.value;
+				var nr = neirong.value;
+				$.ajax({
+					type: "get",
+					url: "http://101.200.58.92/shiyan/index.php/Web/article_save",
+					data: {
+						bt_data: bt,
+						yy_data: yy,
+						zz_data: zz,
+						nr_data: nr,
+						id_data: id
+
+					},
+					async: true,
+					success: function(data) {
+						//						alert(data);
+
+						//									alert(data);
+						json = JSON.parse(data);
+						alert(json)
+						if(json == true) {
+							alert('修改成功');
+						} else {
+							alert('修改失败');
+						}
+						$.ajax({
+							type: "get",
+							url: "http://101.200.58.92/shiyan/index.php/Web/article_edit1",
+							data: {
+								id_data: id
+							},
+							async: true,
+							success: function(data) {
+								//														alert(data);
+								json = JSON.parse(data);
+								//									
+
+								biaoti.value = json[0].biaoti;
+								yuyan.innerHTML = json[0].yuyan;
+								zuozhe.value = json[0].name;
+								neirong.value = json[0].neirong;
+								//									nr.value="xxxx";
+								//									alert(json[0].neirong);
+
+							}
+						});
+
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>

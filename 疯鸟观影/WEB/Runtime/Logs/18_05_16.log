@@ -1,0 +1,57 @@
+[ 2018-05-16T11:33:13+08:00 ] 60.12.178.150 /video/index.php/User/login?user_data=26324636&password_data=123456
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.014782s ]
+INFO: [ route_check ] --END-- [ RunTime:0.014868s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000624s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000081s ]
+
+[ 2018-05-16T11:33:17+08:00 ] 60.12.178.150 /video/index.php/User/login?user_data=26324636&password_data=12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000359s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000438s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000059s ]
+
+[ 2018-05-16T11:33:26+08:00 ] 60.12.178.150 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000363s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000428s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000056s ]
+
+[ 2018-05-16T14:35:23+08:00 ] 163.177.90.152 /video/index.php/User/login?user_data%3D26324636%26password_data%3D123456
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000398s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000413s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000071s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-05-16T14:35:23+08:00 ] 119.147.207.152 /video/index.php/User/get_user_info?user_data%3D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000441s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000352s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000283s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+

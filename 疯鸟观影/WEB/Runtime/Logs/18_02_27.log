@@ -1,0 +1,28 @@
+[ 2018-02-27T12:50:14+08:00 ] 112.11.53.135 /video/index.php/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.022357s ]
+INFO: [ route_check ] --END-- [ RunTime:0.022453s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000488s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000072s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-27T14:27:00+08:00 ] 183.57.53.197 /video/index.php/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000420s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000426s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000057s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+

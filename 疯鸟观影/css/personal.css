@@ -1,0 +1,136 @@
+div{
+	display: block;
+}
+#mess-box {
+    background: url("../img/video.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    line-height: 35px;
+    padding-left: 15%;
+    overflow: hidden;
+    display: flex;
+}
+#mess-box li{
+	width: 100%;
+	color: #fff;
+}
+.zhanghao{
+	float: left;
+}
+
+.QQ{
+	float: left;
+}
+.QQ_t{
+	display: inline-block;
+	float: left;
+	width: 10%;
+	height: 5px;
+}
+.phone{
+	float: left;
+}
+.phone_t{
+	display: inline-block;
+	float: left;
+	width: 10%;
+	height: 5px;
+}
+.qianming{
+	float: left;
+}
+.qianming_t{
+	display: inline-block;
+	float: left;
+	width: 10%;
+	height: 5px;
+}
+.vip{
+	float: left;
+}
+.vip_t{
+	display: block;
+	float: left;
+}
+.vip_jihuo{
+	display: block;
+	float: left;
+	width: 60px;
+	text-align: center;
+	line-height: 25px;
+	background: #7A67EE;
+	border-radius: 20%;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+.change_pass{
+	display: block;
+	float: left;
+	width: 80px;
+	text-align: center;
+	background: #7A67EE;
+	border-radius: 20%;
+	margin-top: 5px;
+}
+.update_mes{
+	display: block;
+	float: left;
+	width: 80px;
+	text-align: center;
+	background: #7A67EE;
+	border-radius: 20%;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+.personal{
+	width: 100%;
+}
+.personal-left{
+	width: 30%;
+	height: 300px;
+}
+.personal-right{
+	width: 50%;
+	height: 300px;
+	border: 1px solid #eee;
+	/*background: red;*/
+}
+table.item {
+    border: 1px solid #d0d0d0;
+    background: #F7F7F7;
+    border-radius: 6px;
+}
+
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ table.item tr.title {
+    height: 30px;
+    line-height: 30px;
+    background: url(../img/tbg.png) repeat-x;
+    border-bottom: 1px solid #d2d2d2;
+    box-shadow: 0px -1px 0px rgba(255,255,255,1);
+    font-size: 14px;
+    font-family: '微软雅黑';
+    color: #1c78c0;
+}
+ table.item td {
+    padding: 4px 10px;
+    line-height: 28px;
+}
+table.item tr:nth-child(2n) {
+    background: #EFEFEF;
+}
+ table.item tr {
+    border-bottom: 1px solid #dfdfdf;
+}
+ table.item tr td:last-child {
+    padding-right: 5px;
+}
+ table.item tr:last-child {
+    border: none;
+}

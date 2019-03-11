@@ -1,0 +1,26 @@
+body{
+	background: url(../img/body.jpg);
+    font: normal 13px/22px Arial, Helvetica, sans-serif;
+    color: #505050;
+}
+input{
+	width: 20%;
+	height: 30px;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-bottom: 10px;
+}
+#usersex{
+	width: 20.25%;
+	margin-left: 40%;
+	margin-right: 40%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+button{
+	width: 20.25%;
+	height: 30px;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-bottom: 10px;
+}

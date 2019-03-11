@@ -1,0 +1,163 @@
+[ 2018-04-18T18:30:14+08:00 ] 101.67.221.100 /video/index.php/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.026957s ]
+INFO: [ route_check ] --END-- [ RunTime:0.027090s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 39 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.017451s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000165s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-04-18T18:30:23+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000428s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000065s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-04-18T18:30:28+08:00 ] 101.67.221.100 /video/index.php/User/login?user_data=26324636&password_data=12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000458s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000229s ]
+
+[ 2018-04-18T18:30:31+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000591s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000562s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000080s ]
+
+[ 2018-04-18T18:32:10+08:00 ] 101.67.221.100 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000563s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000079s ]
+
+[ 2018-04-18T18:32:12+08:00 ] 101.67.221.100 /video/index.php/User/vip_jihuo?user_data=26324636&jihuoma_data=aa
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000541s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `vip` [ RunTime:0.000678s ]
+SQL: SELECT * FROM `vip` WHERE ( `jihuoma` = 'aa' ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005637s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: UPDATE `user` SET `id`=16,`username`='26324636',`password`='12345678',`qq`='26324636',`phone`='17857058385',`qianming`='每条路都有不得不这样走的理由',`zhuce_data`='2018-03-03',`vip_data`='2019-01-27' WHERE ( `username` = 26324636 ) [ RunTime:0.020352s ]
+SQL: UPDATE `vip` SET `id`=1,`jihuoma`='aa',`is_use`=1,`day`=300 WHERE ( `jihuoma` = 'aa' ) [ RunTime:0.027990s ]
+
+[ 2018-04-18T18:32:13+08:00 ] 101.67.221.100 /video/index.php/User/get_user_info?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000565s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000538s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000225s ]
+
+[ 2018-04-18T18:32:17+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000462s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000404s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000072s ]
+
+[ 2018-04-18T18:32:45+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000501s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000056s ]
+
+[ 2018-04-18T18:32:58+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000477s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000057s ]
+
+[ 2018-04-18T18:33:04+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000573s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000571s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000087s ]
+
+[ 2018-04-18T18:33:11+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000423s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000450s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000061s ]
+
+[ 2018-04-18T18:33:36+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000400s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000518s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000060s ]
+
+[ 2018-04-18T18:33:40+08:00 ] 101.67.221.100 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000405s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000382s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000069s ]
+
+[ 2018-04-18T20:56:36+08:00 ] 112.90.82.218 /video/index.php/User/get_user_info?user_data%3D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000361s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000422s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000059s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+

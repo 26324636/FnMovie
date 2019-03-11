@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="user">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：激活码 > 激活码</span>
+			</div>
+			<div class="container">
+				<div class="option" style="display: flex;">
+					<strong class="fl">共<b id="count"></b>个激活码</strong>
+					<td>
+						<select id="codeday" class="ui-field" style="margin: 0 15px;">
+							<!下拉框控件>
+							<option style="text-align:center;" value="激活码天数">激活码天数</option>
+							<option style="text-align:center;" value="1">1天</option>
+							<option style="text-align:center;" value="3">3天</option>
+							<option style="text-align:center;" value="7">7天</option>
+							<option style="text-align:center;" value="30">30天</option>
+							<option style="text-align:center;" value="365">365天</option>
+						</select>
+					</td>
+					<input type="text" placeholder="数量" class="ui-field" id="codenum" />
+					<div class="addcode-buttom" style="cursor: pointer; width: 40px;height: 30px;line-height: 30px;text-align: center;background: #87CEFA;border-radius: 20%;margin-left: 20px;margin-top:3px;font-weight: bold;">
+						生成
+					</div>
+				</div>
+				<form name="cmsform" id="cmsform" method="post" action="?options=batch">
+					<table width="100%" class="item" id="table">
+						<tbody>
+							<tr class="title">
+								<td width="10%" align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll" title="全选"></td>
+								<td width="5%" align="center">ID</td>
+								<td width="20%">激活码</td>
+								<td width="15%">是否使用</td>
+								<td width="15%">是否购买</td>
+								<td width="15%">天数</td>
+								<td width="20%" align="center">操作</td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+					<table width="100%" class="item">
+						<tbody>
+
+							<tr class="footer">
+								<td colspan="5" align="right" id="cms-paging">
+									<a href="javascript:void(0)" class="page-first">首页</a>
+									<a href="javascript:void(0)">上页</a>
+									<a class="now_page">1</a>
+									<a href="/system/user.php?p=2">下页</a>
+									<a href="/system/user.php?p=9">末页</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+			var request_url = localStorage.getItem('request_url');
+			var t = document.getElementById('table');
+			var count = document.getElementById('count');
+			//			alert(article_list);
+			//			article_list.innerHTML='';
+			//			alert(count.innerHTML);
+			$.ajax({
+				type: "get",
+				url:request_url + "Admin/code_count",
+				data: {},
+				async: true,
+				success: function(data) {
+					json = JSON.parse(data);
+					count.innerHTML = json;
+				}
+			});
+			$.ajax({
+				type: "get",
+				url: request_url + "Admin/code_show",
+				data: {},
+				async: true,
+				success: function(data) {
+					json = JSON.parse(data);
+					for(a in json) {
+						if(json[a].id != '') {
+							var r = t.insertRow();
+						}
+						var c = r.insertCell();
+						c.innerHTML = '<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="209"></td>';
+						var c = r.insertCell();
+						c.innerHTML = json[a].id;
+						var c = r.insertCell();
+						c.innerHTML = json[a].jihuoma;
+						var c = r.insertCell();
+						c.innerHTML = json[a].is_use;
+						var c = r.insertCell();
+						c.innerHTML = json[a].is_buy;
+						var c = r.insertCell();
+						c.innerHTML = json[a].day;
+						var c = r.insertCell();
+						c.innerHTML = '<a style="color:red;" class="del" iid=' + json[a].id + '> 删除</a>';
+					}
+					del_event();
+					//					alert(1);
+				}
+			});
+
+			function del_event() {
+				var del = document.getElementsByClassName('del');
+				//			    alert(del.length);
+
+				for(var i = 0; i < del.length; i++) {
+					del[i].addEventListener('click', function() {
+						var judge = confirm("确定将此记录删除?");
+						var id = this.getAttribute("iid");
+
+						if(judge == true) {
+							$.ajax({
+								type: "get",
+								url: request_url + "Admin/code_delete",
+								data: {
+									iid_data: id
+								},
+								async: true,
+								success: function(data) {
+									json = JSON.parse(data);
+									if(json == 1) {
+										alert("删除成功");
+									} else {
+										alert("删除失败");
+									}
+									window.location.reload();
+								}
+							});
+						}
+					});
+				}
+			}
+			
+			//添加激活码
+			var addcode_buttom = document.getElementsByClassName('addcode-buttom');
+			var codeday = document.getElementById('codeday');
+			var codenum = document.getElementById('codenum');
+			
+			addcode_buttom[0].onclick = function(){
+				$.ajax({
+					type: "get",
+					url: request_url + "Admin/code_add",
+					data: {
+					day_data: codeday.value,
+					num_data:codenum.value
+					},
+					async: true,
+					success: function(data) {
+						if(data){
+							alert('生成激活码成功');
+						}
+						else{
+							alert('生成失败，请联系管理员');
+						}
+						window.location.reload();
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>

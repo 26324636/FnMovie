@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>广告友链图片管理</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="lianjie">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：设置 > 广告图片友链管理</span>
+			</div>
+			<div class="container">
+				<div class="option">
+					<strong class="fl">共<b><a href="option-ad.php"> 19 </a></b>个链接，<small style="font-size:13px; font-weight:200;">友情链接<a href="option-ad.php?mod=friendslink"> 2 </a>个,焦点图<a href="option-ad.php?mod=slider"> 6 </a>个,广告<a href="option-ad.php?mod=ad"> 11 </a>个</small></strong>
+					<a href="links-new.php" title="添加链接" class="plus fr ml20">添加链接</a>
+				</div>
+				<table width="100%" class="item">
+					<tbody>
+						<tr class="title">
+							<td width="4%" align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll" title="全选"></td>
+							<td width="28%">[ID]名称</td>
+							<td width="8%">栏目</td>
+							<td width="7%">类型</td>
+							<td width="17%">跳转地址（URL）</td>
+							<td width="6%">状态</td>
+							<td width="21%">描述</td>
+							<td width="9%" align="center">操作</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="19"></td>
+							<td>[ 19 ] 2015年绍兴市越城区YBA篮球赛</td>
+							<td>
+								<a href="option-ad.php?mod=slider">
+									焦点图</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com/basketball/match-10.html" target="_blank">http://www.0575ty.com/basketball/match-10.html</a>
+							</td>
+							<td><b class="green">开启 ✔</b></td>
+							<td></td>
+							<td align="center">
+								<a href="links-edt.php?id=19">编辑</a> |
+								<a href="option-ad.php?id=19&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="18"></td>
+							<td>[ 18 ] 茹氏车行</td>
+							<td>
+								<a href="option-ad.php?mod=friendslink">
+									友情链接</a>
+							</td>
+							<td>文字</td>
+							<td>
+								<a href="http://vip.hx2car.com/sxrs/" target="_blank">http://vip.hx2car.com/sxrs/</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td></td>
+							<td align="center">
+								<a href="links-edt.php?id=18">编辑</a> |
+								<a href="option-ad.php?id=18&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="17"></td>
+							<td>[ 17 ] 活力体育 - 让绍兴运动起来</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com" target="_blank">http://www.0575ty.com</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>本土赛事首页顶部广告条 ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=17">编辑</a> |
+								<a href="option-ad.php?id=17&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="16"></td>
+							<td>[ 16 ] 活力体育 - 让绍兴运动起来</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com" target="_blank">http://www.0575ty.com</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>篮球专区首页顶部广告 ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=16">编辑</a> |
+								<a href="option-ad.php?id=16&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="15"></td>
+							<td>[ 15 ] 水墨寒WEB工作室</td>
+							<td>
+								<a href="option-ad.php?mod=friendslink">
+									友情链接</a>
+							</td>
+							<td>文字</td>
+							<td>
+								<a href="http://www.smohan.net" target="_blank">http://www.smohan.net</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td></td>
+							<td align="center">
+								<a href="links-edt.php?id=15">编辑</a> |
+								<a href="option-ad.php?id=15&amp;options=del">删除</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="12"></td>
+							<td>[ 12 ] 活力体育 - 让绍兴运动起来</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com" target="_blank">http://www.0575ty.com</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>运动汇 首页 顶部广告条 ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=12">编辑</a> |
+								<a href="option-ad.php?id=12&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="11"></td>
+							<td>[ 11 ] 绍兴茹氏车行</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://vip.hx2car.com/sxrs/" target="_blank">http://vip.hx2car.com/sxrs/</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>篮球专区 首页右侧 325*180p ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=11">编辑</a> |
+								<a href="option-ad.php?id=11&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="10"></td>
+							<td>[ 10 ] 活力体育</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com" target="_blank">http://www.0575ty.com</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>篮球专区 首页右侧 325*150p ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=10">编辑</a> |
+								<a href="option-ad.php?id=10&amp;options=del">删除</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="7"></td>
+							<td>[ 7 ] 活力体育 - 让绍兴运动起来</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com" target="_blank">http://www.0575ty.com</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>首页底部广告条</td>
+							<td align="center">
+								<a href="links-edt.php?id=7">编辑</a> |
+								<a href="option-ad.php?id=7&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="6"></td>
+							<td>[ 6 ] 浙江广厦 VS 上海玛吉斯</td>
+							<td>
+								<a href="option-ad.php?mod=ad">
+									广告</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com/activity/24.html" target="_blank">http://www.0575ty.com/activity/24.html</a>
+							</td>
+							<td><b class="red">关闭 ✘</b></td>
+							<td>浙江广厦 VS 上海玛吉斯 ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=6">编辑</a> |
+								<a href="option-ad.php?id=6&amp;options=del">删除</a>
+							</td>
+						</tr>
+						
+						<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="1"></td>
+							<td>[ 1 ] 2016YBA暨“威门药业”杯篮球联赛圆满闭幕</td>
+							<td>
+								<a href="option-ad.php?mod=slider">
+									焦点图</a>
+							</td>
+							<td>图像</td>
+							<td>
+								<a href="http://www.0575ty.com/news/show.php?id=197" target="_blank">http://www.0575ty.com/news/show.php?id=197</a>
+							</td>
+							<td><b class="green">开启 ✔</b></td>
+							<td>2016YBA暨“威门药业”杯篮 ...</td>
+							<td align="center">
+								<a href="links-edt.php?id=1">编辑</a> |
+								<a href="option-ad.php?id=1&amp;options=del">删除</a>
+							</td>
+						</tr>
+						<tr class="footer">
+							<td align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll2" title="全选"></td>
+							<td colspan="2" align="left"><label for="checkAll2" class="fl">全选&nbsp;&nbsp;&nbsp;&nbsp;</label><button type="submit" class="bin">批量删除</button></td>
+							<td colspan="6" align="right" id="cms-paging">
+								<a href="javascript:void(0)" class="page-first">首页</a>
+								<a href="javascript:void(0)">上页</a>
+								<a class="now_page">1</a>
+								<a href="javascript:void(0)">下页</a>
+								<a href="javascript:void(0)" class="page-last">末页</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+
+</html>

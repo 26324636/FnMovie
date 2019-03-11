@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>文章</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="article">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：文章 > 全部文章</span>
+			</div>
+			<div class="container">
+				<div class="option">
+					<strong class="fl">共<b id="count"></b>篇文章</strong>
+					<div class="fr">
+						<form name="search-user" id="search-user" method="get" action="post.php?options=search">
+							<a href="post-new.php" title="添加文章" class="plus fl ml20">添加文章</a>
+						</form>
+					</div>
+				</div>
+				<form name="cmsform" id="cmsform" method="post" action="?options=batch">
+					<table width="100%" class="item" id="table">
+						<tbody>
+							<tr class="title">
+								<td width="4%" align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll" title="全选"></td>
+								<td width="2%" align="center">UID</td>
+								<td width="10%">标题</td>
+								<td width="6%" align="center">昵称</td>
+								<td width="6%" align="center">语言</td>
+								<td width="4%" align="center">点赞</td>
+								<td width="4%" align="center">评论</td>
+								<td width="4%" align="center">分享</td>
+								<td width="4%" align="center">浏览</td>
+								<td width="8%" align="center">时间</td>
+								<td width="8%" align="center">操作</td>
+							</tr>
+							<tr>
+							<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="209"></td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td>11</td>
+							<td><a class="bianji" style="color: #136baf;" iiid=' + json[a].id + '>编辑</a> <a style="color:red;" class="del" iid=' + json[a].id + '> 删除</a></td>
+							</tr>
+						</tbody>
+
+					</table>
+					<table width="100%" class="item">
+						<tbody>
+							
+							<tr class="footer">
+								<td colspan="6"  id="cms-paging">
+									<a href="javascript:void(0)" class="page-first">首页</a>
+									<a href="javascript:void(0)">上页</a>
+									<a class="now_page">1</a>
+									<a href="/system/post.php?p=2">下页</a>
+									<a href="/system/post.php?p=6">末页</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+
+		<script>
+			var a1 = document.getElementById('a1');
+			var article_list = document.getElementById('article_list');
+			var t = document.getElementById('table');
+			var count = document.getElementById('count');
+
+			$.ajax({
+				type: "get",
+				url: "http://101.200.58.92/shiyan/index.php/Web/article_count",
+				data: {
+
+				},
+				async: true,
+				success: function(data) {
+
+					json = JSON.parse(data);
+
+					count.innerHTML = json;
+					
+					//						alert(json[1].id);
+
+					
+				}
+			});
+			$.ajax({
+				type: "get",
+				url: "http://101.200.58.92/shiyan/index.php/Web/article_show",
+				data: {
+
+				},
+				async: true,
+				success: function(data) {
+					//						alert(1);
+					json = JSON.parse(data);
+					//						alert(json[1].id);
+
+					for(a in json) {
+						if(json[a].id != '') {
+							var r = t.insertRow();
+						}
+						//							 alert(t.rows.length);
+						var c = r.insertCell();
+						c.innerHTML = '<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="209"></td>';
+						var c = r.insertCell();
+						c.innerHTML = json[a].id;
+						var c = r.insertCell();
+						c.innerHTML = json[a].biaoti;
+						var c = r.insertCell();
+						c.innerHTML = json[a].name;
+						var c = r.insertCell();
+						c.innerHTML = json[a].yuyan;
+						var c = r.insertCell();
+						c.innerHTML = json[a].dianzan;
+						var c = r.insertCell();
+						c.innerHTML = json[a].pinglun;
+						var c = r.insertCell();
+						c.innerHTML = json[a].fenxiang;
+						var c = r.insertCell();
+						c.innerHTML = json[a].liulan;
+						var c = r.insertCell();
+						c.innerHTML = json[a].time;
+						var c = r.insertCell();
+						c.innerHTML = '<a class="bianji" style="color: #136baf;" iiid=' + json[a].id + '>编辑</a> <a style="color:red;" class="del" iid=' + json[a].id + '> 删除</a>';
+						
+
+					}
+					caozuo();
+				}
+			});
+			
+			function caozuo() {
+				var del = document.getElementsByClassName('del');
+//							    alert(del.length);
+
+				for(var i = 0; i < del.length; i++) {
+					del[i].addEventListener('click', function() {
+						var judge = confirm("确定将此记录删除?");
+						var id = this.getAttribute("iid");
+						if(judge == true) {
+							$.ajax({
+								type: "get",
+								url: "http://101.200.58.92/shiyan/index.php/Web/article_delete",
+								data: {
+									iid_data: id
+								},
+								async: true,
+								success: function(data) {
+									json = JSON.parse(data);
+									if(json == 1) {
+										alert("删除成功");
+									} else {
+										alert("删除失败");
+									}
+									window.location.reload();
+								}
+							});
+						}
+					});
+				}
+				
+				var bianji = document.getElementsByClassName('bianji');
+//				alert(bianji.length);
+				for(var j = 0 ;j < bianji.length;j++){
+					bianji[j].addEventListener('click',function(){
+						var iiid = this.getAttribute("iiid");
+
+//						alert(iiid);
+						$.ajax({
+								type: "get",
+								url: "http://101.200.58.92/shiyan/index.php/Web/article_edit",
+								data: {
+									iiid_data: iiid
+								},
+								async: true,
+								success: function(data) {
+//									alert(data);
+									json = JSON.parse(data);
+									
+									var index = json[0].id;
+//									alert(index);
+						            window.location.href='edit.html?'+index;
+
+									
+								}
+							});
+							
+
+							
+						
+					});
+				}
+				
+			}
+		</script>
+	</body>
+
+</html>

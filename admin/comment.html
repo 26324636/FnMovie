@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>评论</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="comment">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：评论 > 全部评论</span>
+			</div>
+			<div class="container">
+				<div class="option">
+					<strong class="fl">共<b>3</b>条评论</strong>
+				</div>
+				<form name="cmsform" id="cmsform" method="post" action="?options=batch">
+					<table width="100%" class="item">
+						<tbody>
+							<tr class="title">
+								<td width="4%" align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll" title="全选"></td>
+								<td width="6%">模块</td>
+								<td colspan="2">评论摘要</td>
+								<td width="6%" align="center">置顶</td>
+								<td width="15%" align="center">发表时间</td>
+								<td width="8%" align="center">操作</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="3"></td>
+								<td>
+									<a href="comments.php?mod=post" class="blue">HBuilder</a>
+								</td>
+								<td colspan="2">
+									<a href="/news/194.html#comments" target="blank">ahahaha</a>
+								</td>
+								<td align="center">
+									<a href="?top=n&amp;cid=3" title="置顶">否</a>
+								</td>
+								<td align="center">2017-08-06</td>
+								<td align="center">
+									<a href="comments-show.php?id=3">详细</a> |
+									<a href="comments.php?id=3&amp;options=del" onclick="return confirm('确定将此记录删除?')">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="2"></td>
+								<td>
+									<a href="comments.php?mod=post" class="blue">MUI</a>
+								</td>
+								<td colspan="2">
+									<a href="/news/205.html#comments" target="blank">ghhhh</a>
+								</td>
+								<td align="center">
+									<a href="?top=n&amp;cid=2" title="置顶">否</a>
+								</td>
+								<td align="center">2017-08-05</td>
+								<td align="center">
+									<a href="comments-show.php?id=2">详细</a> |
+									<a href="comments.php?id=2&amp;options=del" onclick="return confirm('确定将此记录删除?')">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="1"></td>
+								<td>
+									<a href="comments.php?mod=activity" class="blue">HTML5+</a>
+								</td>
+								<td colspan="2">
+									<a href="/activity/25.html#comments" target="blank">好</a>
+								</td>
+								<td align="center">
+									<a href="?top=n&amp;cid=1" title="置顶">否</a>
+								</td>
+								<td align="center">2017-07-10</td>
+								<td align="center">
+									<a href="comments-show.php?id=1">详细</a> |
+									<a href="comments.php?id=1&amp;options=del" onclick="return confirm('确定将此记录删除?')">删除</a>
+								</td>
+							</tr>
+							<tr class="footer">
+								
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

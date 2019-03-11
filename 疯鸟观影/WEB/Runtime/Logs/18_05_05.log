@@ -1,0 +1,10 @@
+[ 2018-05-05T19:02:11+08:00 ] 101.67.222.232 /video/index.php/User/judge_vip?user_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.016018s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000091s ]
+

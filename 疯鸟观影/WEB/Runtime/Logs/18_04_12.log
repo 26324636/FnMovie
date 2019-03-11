@@ -1,0 +1,104 @@
+[ 2018-04-12T01:48:10+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=%E7%96%AF%E9%B8%9F%E8%B7%91%E8%85%BF&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000489s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005363s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 疯鸟跑腿 ) LIMIT 1   [ RunTime:0.000205s ]
+ERR: 1054:Unknown column '疯鸟跑腿' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = 疯鸟跑腿 ) LIMIT 1  
+
+[ 2018-04-12T01:48:22+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=%E7%96%AF%E9%B8%9F%E8%B7%91%E8%85%BF&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000443s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.043589s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 疯鸟跑腿 ) LIMIT 1   [ RunTime:0.000205s ]
+ERR: 1054:Unknown column '疯鸟跑腿' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = 疯鸟跑腿 ) LIMIT 1  
+
+[ 2018-04-12T01:49:16+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=fnpaotui&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000380s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000395s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1   [ RunTime:0.000116s ]
+ERR: 1054:Unknown column 'fnpaotui' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1  
+
+[ 2018-04-12T01:49:39+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=26324636&password_data=12346578
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000563s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000581s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000232s ]
+
+[ 2018-04-12T01:49:56+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=26324636&password_data=12345678
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000639s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000553s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.000100s ]
+
+[ 2018-04-12T01:50:09+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=fnpaotui&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000533s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000521s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1   [ RunTime:0.000174s ]
+ERR: 1054:Unknown column 'fnpaotui' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1  
+
+[ 2018-04-12T01:50:32+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=fnpaotui&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000365s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.027228s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1   [ RunTime:0.000204s ]
+ERR: 1054:Unknown column 'fnpaotui' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1  
+
+[ 2018-04-12T01:51:07+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=fnpaotui&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000565s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1   [ RunTime:0.000229s ]
+ERR: 1054:Unknown column 'fnpaotui' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1  
+
+[ 2018-04-12T01:51:16+08:00 ] 101.67.222.186 /video/index.php/User/login?user_data=fnpaotui&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000467s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1   [ RunTime:0.000133s ]
+ERR: 1054:Unknown column 'fnpaotui' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` = fnpaotui ) LIMIT 1  
+

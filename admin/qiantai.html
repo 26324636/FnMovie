@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>前台设置</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="qiantai">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：设置 > 站点前台设置</span>
+			</div>
+			<div class="container">
+				<form name="setform" id="setform" action="?options=true" method="post">
+					<table width="100%" class="item">
+						<tbody>
+							<tr class="title">
+								<td colspan="3">站点前台设置</td>
+							</tr>
+							<tr>
+								<td width="14%">分享插件</td>
+								<td width="41%">
+									<select class="select" name="cfg_share_type" id="cfg_share_type">
+										<option value="smohan">Smohan分享插件</option>
+										<option value="baidu" selected="">百度分享插件</option>
+									</select>
+								</td>
+								<td width="45%">&nbsp;</td>
+							</tr>
+							<tr>
+								<td width="14%">微信侧边栏</td>
+								<td width="41%">
+									<input type="radio" name="cfg_weixinflag" value="Y" checked="">&nbsp;&nbsp;开启&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="cfg_weixinflag" value="N">&nbsp;&nbsp;关闭
+								</td>
+								<td width="45%">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>在线订购功能：</td>
+								<td><input type="radio" name="cfg_order_buy" value="Y" checked="">&nbsp;&nbsp;开启&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="cfg_order_buy" value="N">&nbsp;&nbsp;关闭</td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>广告热线：</td>
+								<td><input type="text" name="cfg_adtel" id="cfg_adtel" class="tl" value="绍兴篮球群：256799211"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>新浪微博：</td>
+								<td><input type="url" name="cfg_sina" id="cfg_sina" class="tl" value="http://weibo.com/0575ty" placeholder="http://weibo.com/"></td>
+								<td>形式如http://weibo.com/smohan 或 weibo.com/3061825921.</td>
+							</tr>
+							<tr>
+								<td>腾讯微博：</td>
+								<td><input type="url" name="cfg_tq" id="cfg_tq" value="" class="tl" placeholder="http://http://t.qq.com/"></td>
+								<td>形式如http://t.qq.com/smohanweb .</td>
+							</tr>
+							<tr>
+								<td>首页焦点图IDS：</td>
+								<td><input type="text" name="cfg_bannersid" id="cfg_bannersid" class="tl" value="1,2,3,4,5,6" placeholder="使用英文 , 分割" onkeyup="ReplaceDot('cfg_bannersid')"></td>
+								<td><span class="red">使用英文 , 分割,必须为正整数</span></td>
+							</tr>
+							<tr>
+								<td>篮球专区标题：</td>
+								<td><input type="text" name="cfg_bbtitle" id="cfg_bbtitle" value="宣传并推动绍兴篮球赛事" class="tl"></td>
+								<td>篮球专区页面右侧文字标题</td>
+							</tr>
+							<tr>
+								<td>篮球专区文字描述：</td>
+								<td><textarea name="cfg_bbtexts" id="cfg_bbtexts" class="tl">看过了NBA的精彩，你是否也想看看绍兴本地的篮球比赛，或者自己也想通过一个平台来展示自己的风采？在这里，你将有一个展现自己的舞台，相信自己，你才是最好的主角，你才是值得一看再看的明星！</textarea></td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><button type="submit" class="submit">保存</button></td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

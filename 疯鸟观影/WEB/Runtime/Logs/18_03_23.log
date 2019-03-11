@@ -1,0 +1,17 @@
+[ 2018-03-23T19:45:00+08:00 ] 101.67.223.98 /video/index.php/User/register
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.019426s ]
+INFO: [ route_check ] --END-- [ RunTime:0.019524s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000590s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000072s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+SQL: INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-23') [ RunTime:0.000156s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`,`qq`,`phone`,`qianming`,`vip_data`,`zhuce_data`) VALUES (null,null,'','','','尚未开通VIP','2018-03-23')
+

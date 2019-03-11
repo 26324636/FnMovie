@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>基本设置</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style> 
+	</head>
+
+	<body>
+		<div id="jiben">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：设置 > 站点基本设置</span>
+			</div>
+			<div class="container">
+				<form name="setform" id="setform" action="?options=true" method="post">
+					<table width="100%" class="item">
+						<tbody> 
+							<tr class="title">
+								<td colspan="3">站点基本设置</td>
+							</tr>
+							<tr>
+								<td width="14%">站点名称：</td>
+								<td width="41%"><input type="text" name="cfg_sitename" id="cfg_sitename" value="DCloud学习平台" class="tl" maxlength="255" required=""></td>
+								<td width="45%">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>站点域名：</td>
+								<td><input type="url" name="cfg_domain" id="cfg_domain" class="tl" value="http://www.dcloud.com" placeholder="http://" required=""></td>
+								<td>形式如http://www.baidu.com <b class="red">http://不能省略,末尾不加 /</b></td>
+							</tr>
+							<tr> 
+								<td>版权信息：</td>
+								<td><input type="text" name="cfg_copyright" id="cfg_copyright" value="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" class="tl" placeholder="COPYRIGHT © 2012-2013 SMOHAN.NET ALL RIGHTS RESERVED."></td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>备案号：</td>
+								<td><input type="text" name="cfg_beian" id="cfg_beian" class="tl" value="浙ICP备10033085号-1==" placeholder="蜀ICP备12345678号"></td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>站点关键字：</td>
+								<td><textarea name="cfg_keywords" id="cfg_keywords" class="tl" placeholder="多关键词请使用英文逗号 , 分割" onkeyup="ReplaceDot('cfg_keywords')">DCloud,html5,mui,hbuilder</textarea></td>
+								<td>合理设置关键字有助于SEO优化，多关键词请使用英文逗号 <b class="red"> , </b>分割</td>
+							</tr>
+							<tr>
+								<td>站点描述：</td>
+								<td><textarea name="cfg_description" id="cfg_description" class="tl" placeholder="站点描述一般不多于100个字符...">DCloud学习平台</textarea></td>
+								<td>站点描述一般不多于100个字符.</td>
+							</tr>
+							<tr>
+								<td>屏蔽词汇：</td>
+								<td><textarea name="cfg_markword" id="cfg_markword" class="tl" placeholder="多个词汇请使用竖线 | 分割">傻逼|妈的|SB|TMD|藏独|警察|政府|政治|我操|我草|习近平|共产党|国民党|妈逼|强奸|他妈的</textarea></td>
+								<td>一些不合理（法）的词汇将被替换为 *** 多个词汇请使用竖线 <b class="red"> | </b>分割 </td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td><button type="submit" class="submit">保存</button></td>
+								<td>&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

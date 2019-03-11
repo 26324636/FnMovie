@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<base target="main" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<title>left</title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style type="text/css">
+			body{
+				width:100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="nav">
+			<ul>
+				<li>
+					<div class="title hover" >				
+						<a href="gaikuang.html" target="main"><div class="iconfont icon-diannao"></div>概况</a>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						<div class="iconfont icon-iconfontcolor17"></div>
+						<span>用户</span>
+					</div>
+					<div class="con">
+						<a href="user.html">普通用户</a>
+						<a href="vipuser.html">VIP用户</a>
+						<!--<a href="#">订单</a>
+						<a href="#">报名</a>-->
+					</div>
+				</li>
+				<li>
+					<div class="title"> 
+						<div class="iconfont icon-jihuomafar"></div>
+						<span>激活码</span>
+					</div>
+					<div class="con">
+						<a href="jihuoma.html" target="main">激活码</a>
+					</div>  
+				</li> 
+				
+				
+				<li>
+					<div class="title">
+						<div class="iconfont icon-zhuanti"></div>
+						<span>订单</span>
+					</div>
+					<div class="con">		
+						<a href="yijiesuan.html">已结算</a>
+						<!--<a href="#">装备</a>
+						<a href="#">培训</a>-->
+					</div>
+				</li>
+				
+				<li>
+					<div class="title">	
+						<a href="fankui.html" target="main">
+							<div class="iconfont icon-iconyijianfankui"></div>反馈</a>
+					</div>
+				</li>
+				
+				<!--<li>
+					<div class="title">	
+						<a href="#" target="main"><div class="iconfont icon-pinglun"></div>评论</a>
+					</div>
+				</li>-->
+			</ul>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			if(window.innerHeight) {
+				var h = window.innerHeight;
+			} else if((document.body) && (document.body.clientHeight)) {
+				var h = document.body.clientHeight;
+			}
+			h = h - 1;
+			var nav = document.getElementById('nav');
+			//			alert(h);
+			nav.style.cssText = 'background: #505050;color: white;height:' + h + 'px;';
+
+			$("#nav ul li").click(function() {
+				var num = $(this).find(".con").length;
+				//								alert(num);
+				if(num == 0) {
+					//					alert("ddd");
+					$(this).siblings().find(".con").slideUp();
+					$(this).find(".title").addClass("hover").parent().siblings().find(".title").removeClass("hover");
+				} else {
+					$(this).find(".con").slideDown().parent().siblings().find(".con").slideUp();
+					$(this).find(".title").addClass("hover").parent().siblings().find(".title").removeClass("hover");
+				}
+			});
+		</script>
+
+	</body>
+
+</html>

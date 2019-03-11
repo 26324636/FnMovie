@@ -1,0 +1,255 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>疯鸟观影系统--全网VIP免费在线播放观看</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/bootstrap.css" tppabs="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery.js" tppabs="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" tppabs="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/tv-beipy.js" tppabs="js/tv-beipy.js" /></script>
+		<link rel="stylesheet" href="css/style.css" tppabs="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery.XYTipsWindow.min.2.8.js"></script>
+		<link href="css/box_style.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/castapp.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/feedback.css"/>
+		
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- 手机自适应样式 -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        	<span class="sr-only">导航切换</span>
+					        	<span class="icon-bar"></span>
+					        	<span class="icon-bar"></span>
+					        	<span class="icon-bar"></span>
+					      	</button>
+							<!--logo图标-->
+		
+						</div>
+						<!-- pc导航样式 -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="index.html" style="color: red;" >首页</a>
+								</li>
+								<li>
+									<a href="codeMall.html">激活码商城</a>
+								</li>
+								<li>
+									<a href="personal.html">个人中心</a>
+								</li>
+								
+								<li>
+									<a target="_blank" href="http://115.159.226.78/upload/forum.php">疯鸟网络论坛</a>
+								</li>
+							</ul>
+							<!--导航 右侧-->
+							<div class="nav navbar-nav navbar-right" id="user_right">
+								<!--<a id="user_login" style="cursor: pointer;">登录</a>-->
+								
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		
+		<!--视频box区域-->
+		<div class="container-fluid video-box">
+			<div class="container ">
+				<div class="tit-name">
+					<span>正在播放:</span>
+                     <h1 id="tittext">感谢您使用疯鸟观影系统播放<a href="http://www.zjw77.club/cinema" target="_blank">疯鸟影院</a>直达观看...</h1>
+				</div>
+				<iframe id="palybox" src="" allowtransparency="true" frameborder="0" scrolling="no" style="border: 1px gainsboro solid;"></iframe>
+
+				<div class="url-box">
+					<div class="input-group">
+						<input type="text" id="url" class="form-control url-text" aria-label="Text input with segmented button dropdown" value=""" placeholder="请粘贴视频网址>ㅂ<ﾉ ☆" title="请复制你想要看的视频网址，粘贴到此处点击播放即可！">
+						<div class="input-group-addon">
+							<select class="url-c url-text" title="如发现视频无法正常播放请尝试更换视频线路！" id="jk">
+								<option value="http://jiexi.92fz.cn/player/vip.php?url=">爱奇艺专用</option>
+								<option value="http://api.91exp.com/svip/?url=">优酷土豆专用1</option>
+								<option value="http://jx.aeidu.cn/index.php?url=">优酷土豆专用2</option>
+								<option value="http://jiexi.92fz.cn/player/vip.php?url=">腾讯视频专用</option>	
+								<option value="http://aikan-tv.com/?url=" >芒果TV专用</option>
+								<option value="">待添加</option>
+							</select>
+						</div>
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default btn-play" title="点击开始解析并开始播放" >播放</button>
+						</div>
+					</div>
+				</div>
+				<div class="tit-gg">
+					<span>若视频播放异常，尝试刷新或更换接口即可解决！</span>
+				</div>
+			</div>
+		</div>	
+		<!--平台logo	-->
+		<div class="container-fluid logo-box">
+			<div class="container ">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-tit">
+							<h4>支持以下网站视频</h4>
+							<p>敬请关注，近期将开放支持更多平台。</p>
+						</div>
+					</div>
+				</div>
+				<!--第一行-->
+				<div class="row">
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://vip.iqiyi.com/" target="_blank" title="爱奇艺会员">
+								<img class="img-responsive" src="img/iqiyilogo.png" tppabs="img/iqiyilogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://film.qq.com/" target="_blank" title="腾讯会员中心">
+								<img class="img-responsive" src="img/qqlogo.png" tppabs="img/qqlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://vip.youku.com/" target="_blank" title="优酷会员中心">
+								<img class="img-responsive" src="img/youkulogo.png" tppabs="img/youkulogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2 ">
+						<div class="logo-lie">
+							<a href="http://www.mgtv.com/vip/" target="_blank" title="芒果会员中心">
+								<img class="img-responsive" src="img/hunantvlogo.png" tppabs="img/hunantvlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://yuanxian.le.com/" target="_blank" title="乐视会员中心">
+								<img class="img-responsive" src="img/letvlogo.png" tppabs="img/letvlogo.png" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-2">
+						<div class="logo-lie">
+							<a href="http://vip.tudou.com/" target="_blank" title="土豆会员中心">
+								<img class="img-responsive" src="img/tudoulogo.png" tppabs="img/tudoulogo.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--第一行结束-->
+			</div>
+		</div>
+		
+
+		<footer class="footer">
+			<div class="branding">
+				<!--友情链接-->
+				<div class="branding_link">
+					<section class="container">
+						<a href="http://47.74.191.135/fncinema/" target="_blank" style="color:#888;margin:0 10px;">
+		
+							疯鸟观影系统
+		
+						</a>| </section>
+				</div>
+				<!--友情链接结束-->
+				<!--居中部分-->
+				<hr style="display: block;height: 1px;margin-bottom: 10px;background-color: #4f4f4f;    margin-top: 0px;margin-bottom: 20px;border: 0;" />
+				<div class="container footer-tit">
+		
+					<p>本站提供的最新电影和电视剧资源均系收集于各大视频网站,本站只提供web页面服务,并不提供影片资源存储,也不参与录制、上传。<br/>若本站收录的节目无意侵犯了贵司版权，请及时与我们联系,谢谢。</p>
+					<p>Copyright&nbsp;&copy;&nbsp;2016-2018&nbsp;
+						<a href="index.htm" tppabs="http://115.159.226.78/upload" target="_blank" style="color:#888;">疯鸟网络工作室</a> 版权所有 Effort</p>
+					<p class="toot-tto">
+						<script type="text/javascript">
+							var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+							document.write(unescape("%3Cspan id='cnzz_stat_icon_1272259769'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1272259769%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+						</script>
+					</p>
+					<!--统计展示-->
+		
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		<script type="text/javascript">
+			//判断是否是VIP，否则不能播放
+			var btn = document.getElementsByClassName('btn');
+			var user = localStorage.getItem('user');
+			var request_url = localStorage.getItem('request_url');
+			btn[0].onclick = function(){
+				$.ajax({
+						type: "get",
+						dataType:"text",
+						url: request_url + "User/judge_vip",
+						data: {
+							user_data: user
+						},
+						async: true,
+						success: function(data) {
+							//alert(data);
+							if(data == -1){
+								alert("VIP已到期，请续费后再继续观看，感谢您的支持！");
+							}else{
+								play();
+							}
+						}
+					});
+			}
+			 var user = localStorage.getItem('user');
+			 //alert(user);
+			 var user_right = document.getElementById('user_right');
+			 if(user == '' || user == null){
+			 	user_right.innerHTML += '<a id="user_login" style="cursor: pointer;">登录</a>';
+			 }else{
+			 	user_right.innerHTML += '<span>欢迎您,' + user   +'  </span>' 
+			 						 +'<a id="user_exit" style="cursor: pointer;">退出</a>';
+			 }
+			 $(document).ready(function() {
+				
+				
+				
+			 });
+			 $("#user_login").click(function(){
+					$.XYTipsWindow({
+						___title:"疯鸟影院登录",
+						___content:"iframe:login.html",
+						___width:"460",
+						___height:"300",
+						___showbg:true,
+						___drag:"___boxTitle"
+			
+					});
+				});	
+			 $("#user_exit").click(function(){
+					localStorage.setItem('user','');
+					user_right.innerHTML = '<a id="user_login" style="cursor: pointer;">登录</a>';
+					alert('退出成功');
+					window.location.reload();
+				});	
+				
+			
+	 
+		</script>
+
+
+
+</html>

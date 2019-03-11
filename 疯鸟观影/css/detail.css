@@ -1,0 +1,162 @@
+
+#detail{
+	    background: url("../img/video.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    line-height: 35px;
+    padding-left: 14%;
+    overflow: hidden;
+}
+.detail_form{
+	background: #fff;
+	border: 1px solid #eee;
+	width: 85%;
+	float: left;
+}
+.top_detail{
+	margin-left: 5%;
+	width: 90%;
+	/*height: 100px;*/
+}
+.left-card{
+	float: left;
+	width: 30%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border: 1px solid #eee;
+}
+.dianpu {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #648ff7;
+    border-radius: 2px;
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.14);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    margin:10px 10px;
+}
+.small-card{
+	display: flex;
+	margin-left: 10px;
+}
+.small-card-text {
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background: #f5f6f9;
+    margin: 10px 10px 10px 0;
+    color: #767ead;
+}
+.left-title{
+	position: relative;
+	border-bottom:1px dashed #eee ;
+}
+.left-title b{
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.qq1_btn {
+    position: absolute;
+    right: 10px;
+    display: block;
+    padding: 0 10px;
+    width: 85px;
+    top: 20px;
+    height: 32px;
+    line-height: 32px;
+    background: #f97c73;
+    border-radius: 18px;
+    text-align: right;
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.14);
+}
+.right-card{
+	width:70% ;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	border: 1px solid #eee;
+}
+.pay-menu {
+	/*margin-top: 10px;*/
+	margin-left: 10px;
+	margin-right: 10px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: #f5f6f9;
+    overflow: hidden;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    /*border: 1px solid #eee;*/
+    border-bottom: none;
+    color: #33334f;
+    font-size: 14px;
+}
+.checked1 {
+    background: #648ff7;
+    color: #fff;
+}
+
+.pay {
+    float: left;
+    height: 44px;
+    padding: 0 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.all_pay {
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #f97c73;
+}
+.pay_list1, .pay_list2 {
+    padding: 18px 0 8px 18px;
+    /*border: 1px solid #eee;*/
+    border-top: none;
+}
+
+.lab3 {
+    display: inline-block;
+    width: 160px;
+    padding: 10px 0px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 12px 10px 2px;
+    transition: ease 0.2s;
+    border: 1px solid transparent;
+}
+.checked2 {
+    position: relative;
+    border: 1px solid #648ff7;
+}
+.check_pay {
+    display: block;
+    width: 180px;
+    line-height: 31px;
+    height: 31px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background: #f97c73;
+    margin: 0px auto 20px auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.14);
+    transition: .2s;
+}

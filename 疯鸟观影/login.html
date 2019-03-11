@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>登录注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+
+	<body>
+
+		<div class="wrap flex-c-c">
+				<ul class="select__list">
+					<li id="login" class="select__label select__label--active">登录</li>
+					<li id="register" class="select__label ">注册</li>
+				</ul>
+				<span class="pointer"></span>
+				<input type="text" placeholder="账号" class="ui-field" id="username" />
+				<input type="password" placeholder="密码" class="ui-field" id="password" />
+				<input type="password" placeholder="确认密码" class="ui-field--hidden" id="r_password" />
+				<button id="btn" class="ui-button --usr-rtn"></button>		
+		</div>
+		
+		<script type="text/javascript" src="js/castapp.js"></script>
+		<script type="text/javascript" src="js/mui.js" ></script>
+		<script type="text/javascript">
+			
+			$('.select__label').click(function() {
+				$('.select__label').removeClass('select__label--active');
+				$(this).addClass('select__label--active');
+			});
+
+			$('#login').click(function() {
+				$('#btn, .pointer, #password').removeClass('--usr-new --usr-rst ui-field--hidden');
+				$('#btn, .pointer').addClass('--usr-rtn');
+				$('#r_password').addClass('ui-field--hidden');
+			});
+			$('#register').click(function() {
+				$('#btn, .pointer, #r_password, #password').removeClass('--usr-rtn  ui-field--hidden');
+				$('.pointer').addClass('--usr-new');
+				$('#btn, .pointer, #r_password, #password').addClass('ui-field');
+				$('#btn').addClass('--usr-new');
+			});
+			$('#js-usr-rst').click(function() {
+				$('#btn, .pointer').removeClass('--usr-rtn --usr-new');
+				$('#btn, .pointer').addClass('--usr-rst');
+				$('#r_password, #password').addClass('ui-field--hidden');
+			});
+			
+			localStorage.setItem('request_url', 'http://47.74.191.135/fncinema/index.php/');
+			localStorage.setItem('user','');
+			var request_url = localStorage.getItem('request_url');
+			var btn = document.getElementById('btn');
+			
+			
+			
+			btn.onclick = function() { //登录按钮 
+				if($('.select__label--active')[0].innerHTML == "登录"){
+					var username = document.getElementById('username').value;
+//					alert(username);
+				    var password = document.getElementById('password').value;
+				   // alert("被单击了");
+					$.ajax({
+						type: "get",
+						dataType:"text",
+						url: request_url + "User/login",
+						data: {
+							user_data: username,
+							password_data: password
+						},
+						async: true,
+						success: function(data) {
+					console.log(data)
+							if(data==1) {
+								localStorage.setItem('user', username);
+								var user = localStorage.getItem('user');
+								alert('登录成功');
+								window.parent.location.reload();
+								parent.$.XYTipsWindow.removeBox();  
+							} else {
+								alert('登录失败 ')
+							}
+							
+						}
+					});
+				}
+				else{
+					var username = document.getElementById('username').value;
+					
+				    var password = document.getElementById('password').value;
+				    var r_password = document.getElementById('r_password').value;
+				    if(password.length < 8){
+				    	alert("密码长度不能小于8位");
+				    }
+				    else if(password != r_password){
+				    	alert("密码与确认密码不一致");
+				    }
+				    else{
+					    $.ajax({
+							type: "get",
+							dataType:"text",
+							url: "http://47.74.191.135/fncinema/index.php/User/register",
+							data: {
+								user_data: username,
+								password_data: password
+							},
+							async: true,
+							success: function(data) {
+//								alert(data);
+								if(data>0){
+									alert("注册成功");
+								}else if(data == -1){
+									alert("账号已存在");
+								}else{
+									alert("账号已存在");
+								}
+								
+							}
+						});
+				    }
+				    
+				    
+				}
+			}
+			
+				
+			
+		</script>
+	</body>
+
+</html>

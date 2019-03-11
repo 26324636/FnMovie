@@ -1,0 +1,302 @@
+[ 2018-02-22T00:09:26+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000411s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000362s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000062s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:09:30+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000377s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000059s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:09:42+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000404s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000167s ]
+
+[ 2018-02-22T00:13:45+08:00 ] 112.11.55.107 /video/index.php/User/login?password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000641s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000540s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000080s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:13:45+08:00 ] 112.11.55.107 /video/index.php/User/login?password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000414s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000060s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:14:08+08:00 ] 112.11.55.107 /video/index.php/User/login?password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000498s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000360s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000067s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:14:11+08:00 ] 112.11.55.107 /video/index.php/User/login?password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000391s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000080s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:14:17+08:00 ] 112.11.55.107 /video/index.php/User/login?password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000379s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000358s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000084s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:17:41+08:00 ] 112.11.55.107 /video/index.php/User/test?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000515s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'effort'  ) LIMIT 1   [ RunTime:0.000065s ]
+
+[ 2018-02-22T00:18:34+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000464s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000417s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000171s ]
+
+[ 2018-02-22T00:18:40+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000423s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000204s ]
+
+[ 2018-02-22T00:19:02+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000403s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000423s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000178s ]
+
+[ 2018-02-22T00:19:13+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000356s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000170s ]
+
+[ 2018-02-22T00:20:16+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000433s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000362s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000179s ]
+
+[ 2018-02-22T00:20:25+08:00 ] 112.11.55.107 /video/index.php/User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000411s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000075s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:20:39+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000394s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000182s ]
+
+[ 2018-02-22T00:20:59+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=1&password_data=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000413s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 1 ) LIMIT 1   [ RunTime:0.000175s ]
+
+[ 2018-02-22T00:21:05+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000454s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000410s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000061s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:21:09+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000368s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000059s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:21:11+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000462s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000372s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000077s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:42:34+08:00 ] 112.90.82.218 /video/index.php/User/login?user_data%3D%26password_data%3D
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000360s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000058s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T00:47:54+08:00 ] 112.90.82.236 /video/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.000424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_filter ] --START--
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' /www/wwwroot/video/ThinkPHP/Lib/Behavior/ContentReplaceBehavior.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' /www/wwwroot/video/ThinkPHP/Lib/Behavior/ContentReplaceBehavior.class.php 第 47 行.
+INFO: ContentReplace Behavior ::run [ RunTime:0.000218s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000198s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000131s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000856s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2018-02-22T00:48:05+08:00 ] 112.11.55.107 /video/index.php/User/login?user_data=&password_data=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000458s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000429s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000059s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+
+[ 2018-02-22T01:45:43+08:00 ] 112.11.55.107 /video/index.php/User/register?user_data=26324636&password_data=26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000397s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000521s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 26324636 ) LIMIT 1   [ RunTime:0.061610s ]
+SQL: INSERT INTO `user` (`username`,`password`) VALUES ('26324636','26324636') [ RunTime:0.165927s ]
+
+[ 2018-02-22T03:27:30+08:00 ] 113.108.21.80 /video/index.php/User/register?user_data%3D26324636%26password_data%3D26324636
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined index: user_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 15 行.
+NOTIC: [8] Undefined index: password_data /www/wwwroot/video/WEB/Lib/Action/UserAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000407s ]
+SQL: SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1   [ RunTime:0.000073s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( `username` =  ) LIMIT 1  
+SQL: INSERT INTO `user` (`username`,`password`) VALUES (null,null) [ RunTime:0.000083s ]
+ERR: 1048:Column 'username' cannot be null
+ [ SQL语句 ] : INSERT INTO `user` (`username`,`password`) VALUES (null,null)
+

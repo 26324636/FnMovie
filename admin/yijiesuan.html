@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			body {
+				background: url(img/body.jpg);
+				font: normal 13px/22px Arial, Helvetica, sans-serif;
+				color: #505050;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="user">
+			<div class="location">
+				<span class="iconfont icon-home loc-left">当前位置：订单 > 已结算</span>
+			</div>
+			<div class="container">
+				<div class="option">
+					<strong class="fl">共<b id="count"></b>份订单</strong>
+				</div>
+				<form name="cmsform" id="cmsform" method="post" action="?options=batch">
+					<table width="100%" class="item" id="table">
+						<tbody>
+							<tr class="title">
+								<td width="10%" align="center" valign="middle"><input type="checkbox" name="checkAll" id="checkAll" title="全选"></td>
+								<td width="5%" align="center">订单ID</td>
+								<td width="10%">激活码</td>
+								<td width="10%">用户</td>
+								<td width="10%">天数</td>
+								<td width="10%">是否使用</td>
+								<td width="10%">订单价格</td>
+								<td width="10%">订单日期</td>
+								<td width="20%" align="center">操作</td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+					<table width="100%" class="item">
+						<tbody>
+
+							<tr class="footer">
+								<td colspan="5" align="right" id="cms-paging">
+									<a href="javascript:void(0)" class="page-first">首页</a>
+									<a href="javascript:void(0)">上页</a>
+									<a class="now_page">1</a>
+									<a href="/system/user.php?p=2">下页</a>
+									<a href="/system/user.php?p=9">末页</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script>
+			var request_url = localStorage.getItem('request_url');
+			var t = document.getElementById('table');
+			var count = document.getElementById('count');
+			//			alert(article_list);
+			//			article_list.innerHTML='';
+			//			alert(count.innerHTML);
+			$.ajax({
+				type: "get",
+				url: request_url + "Admin/order_count",
+				data: {},
+				async: true,
+				success: function(data) {
+					json = JSON.parse(data);
+					count.innerHTML = json;
+				}
+			});
+			$.ajax({
+				type: "get",
+				url: request_url + "Admin/order_show",
+				data: {},
+				async: true,
+				success: function(data) {
+					json = JSON.parse(data);
+					for(a in json) {
+						if(json[a].id != '') {
+							var r = t.insertRow();
+						}
+						var c = r.insertCell();
+						c.innerHTML = '<td align="center" valign="middle"><input type="checkbox" name="ids[]" value="209"></td>';
+						var c = r.insertCell();
+						c.innerHTML = json[a].id;
+						var c = r.insertCell();
+						c.innerHTML = json[a].code;
+						var c = r.insertCell();
+						c.innerHTML = json[a].user;
+						var c = r.insertCell();
+						c.innerHTML = json[a].day;
+						var c = r.insertCell();
+						c.innerHTML = json[a].is_use;
+						var c = r.insertCell();
+						c.innerHTML = json[a].order_date;
+						var c = r.insertCell();
+						c.innerHTML = json[a].order_price;
+						var c = r.insertCell();
+						c.innerHTML = '<a style="color:red;" class="del" iid=' + json[a].id + '> 删除</a>';
+					}
+					del_event();
+					//					alert(1);
+				}
+			});
+
+			function del_event() {
+				var del = document.getElementsByClassName('del');
+				//			    alert(del.length);
+
+				for(var i = 0; i < del.length; i++) {
+					del[i].addEventListener('click', function() {
+						var judge = confirm("确定将此记录删除?");
+						var id = this.getAttribute("iid");
+
+						if(judge == true) {
+							$.ajax({
+								type: "get",
+								url: request_url + "Admin/order_delete",
+								data: {
+									iid_data: id
+								},
+								async: true,
+								success: function(data) {
+									json = JSON.parse(data);
+									if(json == 1) {
+										alert("删除成功");
+									} else {
+										alert("删除失败");
+									}
+									window.location.reload();
+								}
+							});
+						}
+					});
+				}
+			}
+		</script>
+	</body>
+
+</html>
